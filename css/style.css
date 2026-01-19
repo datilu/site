@@ -156,44 +156,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* =========================
-    Responsividade
-   ========================= */
-@media (max-width: 1080px) {
-    #corpo {
-        width: 90%;
-        max-width: 1000px;
-    }
 
-    .botão-menu, .botao-menu {
-        width: 80%;
-    }
-
-    /* empilha cards em mobile */
-    .card {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        display: flex;
-        
-    }
-
-    .card img,
-    .capa {
-        width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
-    }
-
-    .text-box-card {
-        padding-left: 0;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-}
 
 /* =========================
     Ajustes pontuais / utilitários
@@ -213,10 +176,11 @@ a { color: inherit; }
     position: relative;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     width: 80%;
     margin-left: -40%;
     left: 50%;
-    min-height: 250px;
+    min-height: 130px;
     padding-top: 25px;
 }
 
@@ -232,36 +196,7 @@ h2{
     color: white;
 }
 
-@media (max-width: 1200px) {
-        .baner{
-        background-color: #003566;
-    }
 
-    .baner-conteudo{
-        position: relative;
-        display: flex;
-        flex-direction:column;
-        width: 80%;
-        margin-left: -40%;
-        left: 50%;
-        min-height: 250px;
-        padding-top: 25px;
-    }
-
-    .icone-detetive{
-        display: flex;
-        justify-content: center;
-        width: 60px;
-        height:min-content;
-        margin-right: 50px;
-    }
-
-    h2{
-        font-size: 20px;
-        overflow-wrap: break-word;
-        color: white;
-    }
-}
 
 /* melhora visual e evita inline a maioria das coisas */
 #results {
@@ -332,6 +267,101 @@ h2{
 }
 
 .search-wrapper {
-    position: relative;   /* âncora do absolute */
-    background-color: white;
+    top: 80px;
+    position: sticky;   /* âncora do absolute */
+    background-color: #ffc300;
+    display: flex;
+    justify-content: right;
+    padding: 10px 20% 10px 10px;
+    z-index: 998;
+
+}
+
+#search {
+    border-radius: 5px;
+    height: 25px;
+}
+
+
+
+
+
+
+/* =========================
+    Responsividade
+   ========================= */
+@media (max-width: 1080px) {
+    #corpo {
+        width: 90%;
+        max-width: 1000px;
+    }
+
+    .botão-menu, .botao-menu {
+        width: 80%;
+    }
+
+    /* empilha cards em mobile */
+    .card {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        display: flex;
+        
+    }
+
+    .card img,
+    .capa {
+        width: 100%;
+        max-height: 300px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .text-box-card {
+        padding-left: 0;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .search-wrapper {
+        padding: 10px 5% 10px 10px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1200px) {
+        .baner{
+        background-color: #003566;
+    }
+
+    .baner-conteudo{
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        width: 80%;
+        margin-left: -40%;
+        left: 50%;
+        min-height: 250px;
+        padding-top: 25px;
+    }
+
+    .icone-detetive{
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height:min-content;
+        margin-right: 50px;
+    }
+
+    h2{
+        font-size: 20px;
+        overflow-wrap: break-word;
+        color: white;
+    }
+    
 }
