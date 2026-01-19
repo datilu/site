@@ -232,6 +232,37 @@ h2{
     color: white;
 }
 
+@media (max-width: 600px) {
+        .baner{
+        background-color: #003566;
+    }
+
+    .baner-conteudo{
+        position: relative;
+        display: flex;
+        flex-direction:column;
+        width: 80%;
+        margin-left: -40%;
+        left: 50%;
+        min-height: 250px;
+        padding-top: 25px;
+    }
+
+    .icone-detetive{
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height:min-content;
+        margin-right: 50px;
+    }
+
+    h2{
+        font-size: 20px;
+        overflow-wrap: break-word;
+        color: white;
+    }
+}
+
 /* melhora visual e evita inline a maioria das coisas */
 #results {
     position: absolute;
