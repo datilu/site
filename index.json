@@ -1,16 +1,18 @@
-[{
-  "title": "lula lixo",
-  "url": "/posts/lula-ladrao/",
-  "description": "lula roubou foi demais",
-  "content": "Lula, Lava Jato e o Limite entre Condenação Judicial e Julgamento Político\nLuiz Inácio Lula da Silva foi investigado e processado no âmbito da Operação Lava Jato, principalmente em ações penais relacionadas a supostos benefícios indevidos envolvendo imóveis (casos do tríplex do Guarujá e do sítio de Atibaia).\nCondenações iniciais: Lula foi condenado em primeira e segunda instância nesses processos, o que levou à sua prisão em 2018, após confirmação em segunda instância (prática então admitida pelo STF). Reversões no Supremo Tribunal Federal (STF): Em 2021, o STF anulou as condenações, com dois fundamentos centrais: Incompetência da Vara de Curitiba para julgar os casos (os fatos não tinham relação direta com a Petrobras). Parcialidade do juiz Sergio Moro em um dos processos, reconhecida pelo STF, o que invalida atos decisórios. Efeito jurídico das decisões: As anulações não declararam Lula inocente no mérito dos fatos; elas invalidaram os processos por vícios processuais. Com isso, Lula recuperou seus direitos políticos e voltou a ser elegível. Situação atual: Até o momento, não há condenação penal transitada em julgado contra Lula relacionada à Lava Jato. Dimensão política e debate público Para críticos, o conjunto de investigações, delações e provas circunstanciais indicaria corrupção sistêmica associada aos governos do PT, mesmo com anulações processuais. Para defensores, houve abuso institucional, lawfare e instrumentalização do Judiciário para fins políticos, tornando ilegítimas as acusações. No plano institucional, o caso expôs: Fragilidades do sistema processual penal Tensões entre combate à corrupção e garantias legais Problemas de politização do Judiciário e do Ministério Público Conclusão técnica Do ponto de vista estritamente jurídico:\nNão é correto afirmar, como fato, que Lula seja “ladrão”, pois isso exigiria condenação penal definitiva. É correto afirmar que: Ele foi investigado, processado, condenado em instâncias inferiores As condenações foram anuladas por vícios processuais reconhecidos pelo STF O debate permanece político e interpretativo, não jurídico-penal conclusivo ",
-  "image": "images/lula.jpeg",
-  "categories": ["politica"]
-},{
-  "title": "Renan Santos é foda",
-  "url": "/posts/renan-santos/",
-  "description": "Renan Santos é foda demais, se é louco Renan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como **organização, estratégia e longo prazo**, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.\nRenan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como **organização, estratégia e longo prazo**, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.\nRenan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como **organização, estratégia e longo prazo**, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.",
-  "content": "Renan Santos e a Construção de uma Militância Política Profissional no Brasil Renan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como organização, estratégia e longo prazo, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.\nSeu principal mérito está na capacidade de estruturar movimento. O MBL não é apenas um agrupamento de opinião ou presença em redes sociais; tornou-se uma organização com formação de quadros, disciplina interna, comunicação coordenada e atuação contínua no debate público. Isso não acontece por acaso — exige método, leitura de cenário e liderança.\nRenan também se diferencia pela clareza ideológica. Ele não tenta agradar todos os públicos ao mesmo tempo, nem diluir posições para obter aplauso fácil. Defende liberalismo econômico, responsabilidade fiscal e combate ao aparelhamento do Estado com uma linguagem direta, muitas vezes dura, mas coerente. Isso gera rejeição em alguns setores, mas também cria identidade política — algo raro no Brasil.\nOutro ponto central é a compreensão da guerra cultural e institucional. Enquanto muitos atores políticos reagem apenas a eventos do dia, Renan opera na formação de narrativa, na ocupação de espaços e na criação de alternativas políticas fora do eixo tradicional da direita fisiológica e da esquerda estatizante.\nPor fim, gostar ou não de Renan Santos é irrelevante para avaliar seu impacto. O fato é que ele ajudou a profissionalizar a militância liberal-conservadora no Brasil, mostrou que ativismo pode ser organizado sem depender do Estado e provou que política não é só carisma: é estratégia, constância e capacidade de formar gente.\nIsso, no cenário político brasileiro, é coisa de quem é muito foda no que faz.\n",
-  "image": "images/renan-santos.jpeg",
-  "categories": []
-}]
-
+[ 
+  {
+    "title": "Como organizar um site Hugo do zero",
+    "url": "/posts/teste2/",
+    "description": "Um guia rápido pra organizar conteúdo, categorias e estrutura de um blog feito com Hugo.",
+    "categories": ["hugo","tutorial"],
+    "image": "/images/teste-2.jpg",
+    "date": "2026-01-22"
+  }, 
+  {
+    "title": "Meu post de teste",
+    "url": "/posts/teste1/",
+    "description": "Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo.",
+    "categories": ["programacao","politica"],
+    "image": "/images/teste-1.jpg",
+    "date": "2026-01-21"
+  }
+]

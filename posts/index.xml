@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My New Hugo Site</title>
-    <link>https://datilu.github.io/posts/</link>
+    <link>http://localhost:1313/posts/</link>
     <description>Recent content in Posts on My New Hugo Site</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 10 May 2002 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://datilu.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 22 Jan 2026 00:05:00 -0300</lastBuildDate>
+    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>lula lixo</title>
-      <link>https://datilu.github.io/posts/lula-ladrao/</link>
-      <pubDate>Fri, 10 May 2002 00:00:00 +0000</pubDate>
-      <guid>https://datilu.github.io/posts/lula-ladrao/</guid>
-      <description>Lula, Lava Jato e o Limite entre Condenação Judicial e Julgamento Político&#xA;Luiz Inácio Lula da Silva foi investigado e processado no âmbito da Operação Lava Jato, principalmente em ações penais relacionadas a supostos benefícios indevidos envolvendo imóveis (casos do tríplex do Guarujá e do sítio de Atibaia).&#xA;Condenações iniciais: Lula foi condenado em primeira e segunda instância nesses processos, o que levou à sua prisão em 2018, após confirmação em segunda instância (prática então admitida pelo STF).</description>
+      <title>Como organizar um site Hugo do zero</title>
+      <link>http://localhost:1313/posts/teste2/</link>
+      <pubDate>Thu, 22 Jan 2026 00:05:00 -0300</pubDate>
+      <guid>http://localhost:1313/posts/teste2/</guid>
+      <description>Como organizar um site Hugo do zero Esse post é um exemplo pra você testar:&#xA;card com título e descrição filtro por categoria busca pegando conteúdo completo Estrutura básica Uma boa estrutura de pastas ajuda a manter tudo simples:&#xA;content/posts/ (seus posts) static/images/ (imagens) layouts/ (templates) Palavras-chave pra testar Você pode pesquisar por: organizar, tutorial, hugo, blog, estrutura, categorias.</description>
     </item>
     <item>
-      <title>Renan Santos é foda</title>
-      <link>https://datilu.github.io/posts/renan-santos/</link>
-      <pubDate>Thu, 09 May 2002 00:00:00 +0000</pubDate>
-      <guid>https://datilu.github.io/posts/renan-santos/</guid>
-      <description>Renan Santos e a Construção de uma Militância Política Profissional no Brasil Renan Santos se destaca como uma das figuras mais relevantes do Movimento Brasil Livre (MBL) por um motivo simples: ele trata política como organização, estratégia e longo prazo, não como improviso emocional. Em um ambiente político marcado por populismo raso, personalismo e militância desorganizada, Renan atua como operador político no sentido clássico do termo.&#xA;Seu principal mérito está na capacidade de estruturar movimento.</description>
+      <title>Meu post de teste</title>
+      <link>http://localhost:1313/posts/teste1/</link>
+      <pubDate>Wed, 21 Jan 2026 23:59:00 -0300</pubDate>
+      <guid>http://localhost:1313/posts/teste1/</guid>
+      <description>Meu post de teste Esse conteúdo é só um exemplo para você testar:&#xA;listagem na home busca (title/description/content/categoria) capa e link do post Seção 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit.&#xA;Testando palavras-chave: hugo, site, barra de pesquisa, card.&#xA;Seção 2 Mais texto aqui pra aumentar o conteúdo e facilitar a pesquisa.</description>
     </item>
   </channel>
 </rss>

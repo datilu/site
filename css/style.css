@@ -1,389 +1,126 @@
-/* =========================
-    Reset / global
-   ========================= */
-*,
-*::before,
-*::after {
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.corpo{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.titulo{
+    font-size: 50px;
+    text-align: center;
+    background-color: #0d1b2a;
+    color: white;
+    height: 70px;
+    line-height: 70px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.titulo a{
+    text-decoration: none;
+    color: white;
+}
+
+.caixa-barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    background-color: #415a77;
+}
+
+.caixa-barra-pesquisa input{
+    border-radius: 3px;
+    border: none;
+    height: 20px;
+    width: 300px;
+}
+
+/* card */
+.card{
+    box-shadow: 0px 0px 3px rgb(0,0,0,0.1);
+    width: 60%;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    max-height: 700px;
+}
+
+.capa-box{
+    padding: 30px;
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #333;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-/* =========================
-    Top menu
-   ========================= */
-#menu {
-    background-color: #001d3d;
+.capa{
     width: 100%;
-    height: 80px;
-    padding-top: 15px;
-    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 999;
-}
-
-/* link do título */
-
-#menu a { 
-    text-decoration: none;
-    color: white;
-}
-
-#menu h1 {
-    margin: 0;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
-    line-height: 1;
-}
-
-/* =========================
-    Conteúdo principal (#corpo)
-   ========================= */
-#corpo {
-    width: 60%;
-    max-width: 1200px;
-    margin: 0 auto;               
-    margin-top: 0;
-    border-radius: 0 0 10px 10px;
-    box-shadow:
-        -6px 0 10px -6px rgba(0,0,0,0.1),
-        6px 0 10px -6px rgba(0,0,0,0.1);
-    position: relative;
-    background: #fff;
-}
-
-/* espaçamento interno */
-#corpo2 {
-    padding: 20px;
-}
-
-/* =========================
-    Cards (lista de matérias)
-   ========================= */
-.card {
-    display: flex;
-    align-items: flex-start;
-    gap: 16px;             
-    width: 100%;
-    padding: 20px 0;
-    border-bottom: 1px solid #e8e5e5;
-    max-width: 100%;
-}
-
-.card > * {
-    min-width: 0;
-}
-
-/* imagem da capa */
-.card img,
-.capa {
-    display: block;
-    width: 300px;           /* largura fixa da miniatura */
-    height: auto;
-    border-radius: 10px;
+    height: 250px;
+    border-radius: 15px;
     object-fit: cover;
-    transition: box-shadow 0.3s ease, transform 0.15s ease;
+    display: block;
 }
 
-.card img:hover,
-.capa:hover {
-    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
-    transform: translateY(-3px);
-}
-
-
-/* =========================
-    Caixa de texto do card
-   ========================= */
-.text-box-card {
-    flex: 1 1 0%;
-    min-width: 0;         
-    padding-left: 10px;
-    color: #666;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-
-}
-
-.text-box-card * {
-    max-width: 100%;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-}
-
-
-.text-box-card h2 {
-    margin: 0 0 8px 0;
-    font-size: 1rem;
-    color: #000;
-    overflow-wrap: anywhere;
-    word-break: break-word;
-    white-space: normal;
-}
-
-.text-box-card p {
-    margin: 0 0 8px 0;
-    line-height: 1.4;
-}
-
-.text-box-card a {
-    color: inherit;
+.card a{
     text-decoration: none;
-}
-
-/* =========================
-    Data / estilo pequeno
-   ========================= */
-.data {
-    color: #c1121f;
-    font-size: 0.9rem;
-}
-
-
-
-/* =========================
-    Ajustes pontuais / utilitários
-   ========================= */
-a { color: inherit; }
-.text-box-card,
-.text-box-card * {
-    white-space: normal;
-}
-
-/* baner */
-.baner{
-    background-color: #003566;
-    z-index: 999;
-}
-
-.baner-conteudo{
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 80%;
-    margin-left: -40%;
-    left: 50%;
-    min-height: 130px;
-    padding-top: 25px;
-}
-
-.baner-conteudo h2{
-    font-size: 18px;
-}
-
-.icone-detetive{
-    width: 60px;
-    height:min-content;
-    margin-right: 50px;
-}
-
-h2{
+    color: black;
     font-size: 20px;
-    overflow-wrap: break-word;
-    color: white;
 }
 
-
-
-/* melhora visual e evita inline a maioria das coisas */
-#results {
-    position: absolute;
-    top: 100%;
-    right: 20%;
-    z-index: 998;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-height: 420px;
-    overflow-y: auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
+.text-box-card{
+    padding: 0px 40px 40px 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #495057;
+    box-sizing: border-box;
 }
 
-.search-card {
-    width: 300px;
-    height: 140px;
-    margin: 10px 10px 0px 10px;
-    position: relative;
-    border-radius: 6px;
+.description{
     overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
 }
 
-.search-img { 
-    width:100%; 
-    height:100%; 
-    object-fit:cover; 
-    display:block; 
-}
-.search-overlay {
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-
-    background: linear-gradient(
-    to top,
-    rgba(0,0,0,0.95) 0%,
-    rgba(0,0,0,0.6) 40%,
-    rgba(0,0,0,0.0) 70%
-    );
+.data{
+    color: #c1121f;
 }
 
-.search-card a {
-    position: absolute;
-    inset: 0;
-
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-
-    padding: 10px;
-    text-align: center;
-
-    text-decoration: none;
-    color: #fff;
-    z-index: 2;
-}
-
-.search-card .search-title { color:#fff; 
-    font-weight:600; 
-    padding:10px; 
-    text-shadow:0 1px 2px rgba(0,0,0,0.6);
-}
-
-.search-wrapper {
-    top: 80px;
-    position: sticky;
-    background-color: #ffc300;
-    display: flex;
-    justify-content: right;
-    padding: 10px 20% 10px 10px;
-    z-index: 998;
-
-}
-
-#search {
-    border-radius: 5px;
-    height: 25px;
+.corpo hr {
+    width: calc(100% - 70px); /* ou 100% se quiser ocupar tudo */
+    border: none;
+    height: 2px;
+    background-color: #0d1b2a;
+    margin: 20px 0;
+    display: none;
 }
 
 
 
-
-
-
-/* =========================
-    Responsividade
-   ========================= */
-@media (max-width: 1080px) {
-    #corpo {
-        width: 90%;
-        max-width: 1000px;
-    }
-
-    .botão-menu, .botao-menu {
-        width: 80%;
-    }
-
-    /* empilha cards em mobile */
-    .card {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 12px;
-        display: flex;
-        
-    }
-
-    .card img,
-    .capa {
+@media (max-width: 600px){
+    .card{
         width: 100%;
-        max-height: 300px;
-        object-fit: cover;
-        border-radius: 8px;
+        box-shadow: none;
+        max-height: 550px;
     }
 
-    .text-box-card {
-        padding-left: 0;
+    .corpo hr {
+        display: block;
     }
+}
 
-    h1 {
-        font-size: 36px;
-    }
-
-    .search-wrapper {
-        padding: 10px 5% 10px 10px;
-    }
-
-    #results {
-    position: absolute;
-    top: 100%;
-    right: 5%;
-    z-index: 998;
+footer{
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    max-height: 420px;
-    overflow-y: auto;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px rgba(0,0,0,0.6);
-}
-    
-.baner-conteudo h2{
-    font-size: 16px;
-}
+    justify-content: center;
 }
 
-
-
-
-
-@media (max-width: 1200px) {
-        .baner{
-        background-color: #003566;
+@media (min-width: 1000px){
+    .capa{
+        height: 400px;
     }
-
-    .baner-conteudo{
-        position: relative;
-        display: flex;
-        flex-direction:column;
-        width: 80%;
-        margin-left: -40%;
-        left: 50%;
-        min-height: 12%;
-        padding-top: 25px;
+    .card{
+        width: 45%;
     }
-
-    .icone-detetive{
-        display: flex;
-        justify-content: center;
-        width: 60px;
-        height:min-content;
-        margin-right: 50px;
-    }
-
-    h2{
-        font-size: 20px;
-        overflow-wrap: break-word;
-        color: white;
-    }
-    
 }
