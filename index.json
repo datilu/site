@@ -1,18 +1,10 @@
 [ 
   {
-    "title": "Como organizar um site Hugo do zero",
-    "url": "/posts/teste2/",
-    "description": "Um guia rápido pra organizar conteúdo, categorias e estrutura de um blog feito com Hugo.",
-    "categories": ["hugo","tutorial"],
-    "image": "/images/teste-2.jpg",
-    "date": "2026-01-22"
-  }, 
-  {
-    "title": "Meu post de teste",
-    "url": "/posts/teste1/",
-    "description": "Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo. Esse é um post de teste para validar cards, busca e layout no Hugo.",
-    "categories": ["programacao","politica"],
-    "image": "/images/teste-1.jpg",
+    "title": "O esforço não te faz merecedor",
+    "url": "/posts/esforco/",
+    "description": "Muitas pessoas acham que o esforço lhes dá direitos, mas isso não é verdade. E isso tem consequências desastrosas para a sociedade.",
+    "categories": ["filosofia"],
+    "image": "/images/esforco.jpg",
     "date": "2026-01-21"
   }
 ]
