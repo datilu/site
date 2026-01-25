@@ -5,6 +5,10 @@ body{
     font-size: 22px;
 }
 
+p { text-indent: 2em; 
+    text-align: justify;}
+
+
 #titulo{
     font-family: 'Times New Roman', Times, serif;
 }
