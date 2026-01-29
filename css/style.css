@@ -1,26 +1,42 @@
-body{
+/* 1. Cria o efeito de surgimento */
+@keyframes entrarSuave {
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
+}
+
+/* 2. Aplica ao body */
+body {
+    animation: entrarSuave 0.5s ease-in; /* Aparece em 1.5 segundos */
     margin: 0px;
     padding: 0px;
     background-color: #003566;
 }
 
+
 .corpo{
+    padding-top: 10px;
     margin-top: 10px;
     top: 40px;
-    width: 98%;
+    width: 100%;
     gap: 20px;
-    padding: 40px 0 40px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     background-color: white;
     border-radius: 25px;
+    min-height: 100vh;
 }
 
 .corpo-wrap{
     display: flex;
     align-items: center;
     flex-direction: column;
+    flex: 1;
+    padding-right: 2.5%;
 }
 
 .titulo{
@@ -55,6 +71,7 @@ body{
     border-radius: 6px;
     border: solid 3px #404040;
     width: 300px;
+    padding: 17px;
 }
 
 .caixa-barra-pesquisa input:focus{
@@ -70,7 +87,6 @@ body{
     width: 70%;
     border-radius: 15px;
     overflow: hidden;
-    background: white;
     transition: all 0.2s ease-out;
     max-width: 800px;
 }
@@ -110,6 +126,7 @@ body{
     text-decoration: none;
     color: black;
     font-size: 20px;
+    cursor: pointer;
 }
 
 .text-box-card{
@@ -125,18 +142,65 @@ body{
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
 .data{
     color: #c1121f;
 }
 
-@media (max-width: 1000px){
+/* footer */
 
-    .corpo{
-        width: 98%;
+footer{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    padding: 40px 0 10px 0;
+}
+
+/* todo o conteudo incluindo o menu */
+
+.meio{
+    display: flex;
+}
+
+.menu img{
+    cursor: pointer;
+    width: 50px;
+
+}
+
+.menu {
+    padding: 30px 20px 0 20px;
+
+}
+
+/* estado fechado */
+.menu-content {
+    max-width: 0;
+    opacity: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: max-width 0.4s ease, opacity 0.3s ease;
+    color: white;
+}
+
+/* estado aberto */
+.menu.open .menu-content {
+    max-width: 200px;
+    opacity: 1;
+}
+
+
+.menu-content {
+  color: white;
+}
+
+@media (max-width: 1000px){
+    .corpo-wrap{
+        padding: 2%;
     }
-    
     .capa{
         height: 250px;
     }
@@ -148,25 +212,50 @@ body{
     }
 
     .card:nth-child(4n+1):hover {
-        background: white;
+        background: none;
     }
 
     .card:nth-child(4n+2):hover {
-        background: white;
+        background: none;
     }
 
     .card:nth-child(4n+3):hover {
-        background: white;
+        background: none;
     }
 
     .card:nth-child(4n+4):hover {
-        background: white;
+        background: none;
+    }
+
+    .menu img{
+    width: 20px;
+    padding-top: 20px;
+    }
+    .menu {
+    padding: 30px 0 0 10px;
     }
 }
 
-footer{
-    display: flex;
-    justify-content: center;
+.email{
+    padding: 5px;
+    background-color: #414b55;
     color: white;
+    border-radius: 10px;
+    font-weight: 700;
+    border: 2px solid #404040;
 }
 
+.email:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+.botao{
+    padding: 5px;
+    font-weight: 700;
+    color: white;
+    background-color: #970a14;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

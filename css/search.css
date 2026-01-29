@@ -1,5 +1,11 @@
 #results {
-  display: none; /* esconde por padrão */
+  /* Substitua o display: none por estes três: */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none; 
+  
+  /* Mantém seu layout */
+  display: flex; 
   flex-direction: column;
   gap: 10px;
   max-height: 420px;
@@ -7,16 +13,22 @@
   position: absolute;
   top: 70px;
   left: 50%;
-  transform: translateX(-50%); /* centraliza horizontalmente */
+  transform: translateX(-50%);
   width: 320px;
   z-index: 999;
   background-color: white;
   padding: 10px;
   box-shadow: 0 0 10px black;
   border-radius: 10px;
+  
+  /* Transição suave */
+  transition: opacity 0.5s ease-in-out, visibility 0.5s;
 }
+
 #results.active {
-  display: flex; /* mostra quando tiver resultados */
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto; /* Permite clicar nos resultados quando visível */
 }
 
 .search-card {

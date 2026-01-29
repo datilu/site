@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+  <html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Descadastro</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/unsubscribe.css">
+</head>
+  <body>
+    <div class="box-img">
+  <a href="/"><img src="/images/detetive.png" alt=""></a>
+</div>
+
+<div class="wrap">
+  <div class="box">
+
+    <h1 id="title">Remover email da lista</h1>
+    <p id="subtitle">
+      Digite seu email para cancelar o recebimento.<br>
+      vou sentir sua falta!!
+    </p>
+
+    <!-- FORMULÁRIO (somente sem token) -->
+    <form id="unsubscribe-form">
+      <input class="email"
+        type="email"
+        name="email"
+        placeholder="seu@email.com"
+        required
+      >
+      <button class="botao" type="submit">Enviar link</button>
+    </form>
+
+    <p id="msg"></p>
+
+  </div>
+</div>
+
+<script>
+const API_URL = 'https://script.google.com/macros/s/AKfycbxQPjOSKDz0eukDI3ZaBC-Rs4PN62fjf7v9RAh_BKgQdJ-eQwrn76ARiyDwhsfr2EZa/exec';
+
+const params = new URLSearchParams(window.location.search);
+const token = params.get('token');
+
+const form = document.getElementById('unsubscribe-form');
+const msg = document.getElementById('msg');
+const title = document.getElementById('title');
+const subtitle = document.getElementById('subtitle');
+
+if (token) {
+  // ===== CONFIRMAÇÃO =====
+  form.style.display = 'none';
+  title.textContent = 'Confirmando descadastro…';
+  subtitle.textContent = '';
+
+  fetch(API_URL + '?token=' + encodeURIComponent(token))
+    .then(res => res.text())
+    .then(text => {
+      title.textContent = 'Pronto';
+      msg.textContent = text;
+    })
+    .catch(() => {
+      title.textContent = 'Erro';
+      msg.textContent = 'Erro ao processar o descadastro.';
+    });
+
+} else {
+  // ===== PEDIDO =====
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    msg.textContent = 'Processando...';
+
+    fetch(API_URL + '?email=' + encodeURIComponent(form.email.value))
+      .then(res => res.text())
+      .then(() => {
+        msg.textContent = 'Se o email existir, enviaremos um link de confirmação.';
+        form.reset();
+      })
+      .catch(() => {
+        msg.textContent = 'Erro ao enviar solicitação.';
+      });
+  });
+}
+</script>
+
+  </body>
+</html>
